@@ -7,9 +7,19 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   </head>
 
-  <body>
+
+  <body class="container-fluid">
+    <header class="container container-full">
+      <section class="website-header">
+          <strong>Ash's World of Books</strong>
+      </section>
+      <section class="search-bar">
+          <%= render 'search_form' %>
+      </section>
+    </header>
     <%= yield %>
   </body>
 </html>
