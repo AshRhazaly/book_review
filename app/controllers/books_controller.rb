@@ -16,6 +16,7 @@ class BooksController < ApplicationController
     searched_value = params[:search]
     @books = Book.where("title LIKE ? OR author LIKE ? OR summary LIKE ? OR category LIKE ?",
      "%#{searched_value}%","%#{searched_value}%","%#{searched_value}%","%#{searched_value}%")
+    render 'index'
   end
   # GET /books/new
   def new
