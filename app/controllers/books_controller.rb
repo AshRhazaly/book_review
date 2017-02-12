@@ -12,6 +12,11 @@ class BooksController < ApplicationController
   def show
   end
 
+  def search
+    searched_value = params[:search]
+    @books = Book.where("title LIKE ? OR author LIKE ? OR summary LIKE ? OR category LIKE ?",
+     "%#{searched_value}%","%#{searched_value}%","%#{searched_value}%","%#{searched_value}%")
+  end
   # GET /books/new
   def new
     @book = Book.new
