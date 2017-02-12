@@ -33,9 +33,9 @@ class ReviewsController < ApplicationController
   # PATCH/PUT /reviews/1
   # PATCH/PUT /reviews/1.json
   def update
-    review = Review.find(params[:id])
+    @review = Review.find(params[:id])
     if @review.update(review_params)
-      redirect_to books_path(@book)
+      redirect_to book_path(@book)
     else
       render 'new'
     end
