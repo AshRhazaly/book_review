@@ -11,8 +11,8 @@
 </p>
 
 <p>
-  <strong>Isbn:</strong>
-  <%= @book.isbn %>
+  <strong>Category:</strong>
+  <%= @book.category %>
 </p>
 
 <p>
@@ -20,5 +20,20 @@
   <%= @book.summary %>
 </p>
 
+<h4>Reviews</h4>
+<% @book.reviews.each do |review| %>
+<p>
+    <strong>Name:</strong>
+    <%= review.name %>
+</p>
+
+<p>
+    <strong>Content:</strong>
+    <%= review.content %>
+</p>
+<%= link_to 'Edit', edit_book_review_path(@book, review) %>
+<%= link_to 'Delete', book_review_path(@book, review), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%end%>
+<%= link_to 'Add a new review', new_book_review_path(@book) %>
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>

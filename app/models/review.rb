@@ -1,3 +1,3 @@
 class Review < ApplicationRecord
-  has_and_belong_to :books
+  has_and_belongs_to_many :books
 end
