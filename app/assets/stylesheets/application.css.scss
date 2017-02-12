@@ -1,0 +1,34 @@
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "index";
+ @import "show";
+.container-full {
+  height: 200px;
+  width: 100%;
+  padding: 0;
+  background-image: url("http://i.imgur.com/8LzicAv.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.website-header {
+  padding-top: 85px;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  color:#000000;
+  text-shadow: 3px 3px rgba(0,0,0,0.2);
+  font-size: 30px;
+}
+.create-book {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.search-bar {
+  text-align: right;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}

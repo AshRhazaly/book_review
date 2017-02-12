@@ -16,6 +16,9 @@
       <section class="website-header">
           <strong>Ash's World of Books</strong>
       </section>
+      <section class="create-book">
+        <%= link_to 'Add a book here', new_book_path, class:"btn btn-default btn-create" %>
+      </section>
       <section class="search-bar">
           <%= render 'search_form' %>
       </section>

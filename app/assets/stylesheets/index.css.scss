@@ -1,0 +1,20 @@
+.main-container {
+  display:inline-block;
+  margin-top: 20px;
+  width:100%;
+}
+.book-content {
+  text-align: center;
+  position:absolute;
+  display:block;
+  margin: 0 auto;
+}
+.book-container {
+  box-shadow:3px 3px rgba(0,0,0,0.2);
+  height:250px;
+  margin:10px 10px 10px 0;
+  width:30%;
+}
+.book-title {
+  font-size: 20px;
+}

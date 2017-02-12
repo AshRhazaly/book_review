@@ -1,39 +1,45 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
+<section class="container-fluid book-review">
+<section class="col-xs-6 book-summary">
+  <section class="book-title">
   <%= @book.title %>
-</p>
+</section>
 
-<p>
-  <strong>Author:</strong>
+
+
+  <section class="book-author">
+    Author:
   <%= @book.author %>
-</p>
+</section>
 
-<p>
-  <strong>Category:</strong>
+
+  <section class="book-category">
+    Category:
   <%= @book.category %>
-</p>
-
-<p>
-  <strong>Summary:</strong>
+</section>
+  <section class="book-summary">
+    Summary:
   <%= @book.summary %>
-</p>
-
-<h4>Reviews</h4>
+</section>
+  <%= link_to 'Edit', edit_book_path(@book) %>
+</section>
+<section class="col-xs-6 book-review">
+  Reviews
 <% @book.reviews.each do |review| %>
-<p>
-    <strong>Name:</strong>
+  <section class="book-review-name">
+    Name:
     <%= review.name %>
-</p>
+  </section>
 
-<p>
-    <strong>Content:</strong>
+  <section class="book-review-content">
+    Content:
     <%= review.content %>
-</p>
+  </section>
+<%= link_to 'Add a new review', new_book_review_path(@book) %>
 <%= link_to 'Edit', edit_book_review_path(@book, review) %>
 <%= link_to 'Delete', book_review_path(@book, review), method: :delete, data: { confirm: 'Are you sure?' } %>
 <%end%>
-<%= link_to 'Add a new review', new_book_review_path(@book) %>
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+</section>
+</section>
+<footer class="page-footer">
+    <%= link_to 'Back', books_path, class:"btn btn-default"%>
+</footer>
