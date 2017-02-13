@@ -1,8 +1,9 @@
 <section class="container-fluid main-container">
-<article class="container book-content">
+<article class="row book-content">
 
 <% @books.each do |book| %>
 <%= content_tag(:div, class: 'col-xs-4 book-container') do %>
+
 <header class="book-title">
         <%= book.title %>
 </header>
@@ -13,7 +14,7 @@
 <section class="book-summary">
         <%= book.summary %>
 </section>
-<section class="book-links">
+<footer class="book-links">
   <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
         <%= link_to 'Reviews', book_path(book) %>
   <span>&nbsp&nbsp&nbsp</span>
@@ -24,5 +25,8 @@
         <%= link_to 'Delete Book', book, method: :delete, data: { confirm: 'Are you sure?' } %>
           <% end %>
           <% end %>
-</section>
+
+</footer>
+
 </article>
+</section>

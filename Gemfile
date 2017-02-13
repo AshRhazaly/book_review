@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bootstrap_form'
 gem 'kaminari'
 gem 'client_side_validations'
 gem 'bootstrap-sass', '~> 3.3.6'
