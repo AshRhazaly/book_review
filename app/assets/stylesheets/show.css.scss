@@ -18,6 +18,9 @@
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
+.book-summary {
+  font-family: 'Open Sans', sans-serif;
+}
 .book-review-title {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -35,10 +38,10 @@
   justify-content: flex-end;
 }
 
-.book-review-name h1 {
+.book-review-name {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight:900;
+  font-size: 18px;
+
 }
 
 .book-review-content {

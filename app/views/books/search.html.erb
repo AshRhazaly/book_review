@@ -1,18 +1,25 @@
+<section class="container form-box">
 <% @books.each do |book| %>
-  <p>
-    Title
+  <header class="book-search-title">
+    <div class="book-search_title">Title</div>
+    <br />
     <%= book.title %>
-  </p>
-  <p>
-    Author
+  </header>
+  <section class="book-search-author">
+    <div class="book-search-author-title">Author</div>
+    <br />
     <%= book.author %>
-  </p>
-  <p>
-    Category
+  </section>
+
+  <section class="book-search-category">
+    <div class="book-search-category-title">Category</div>
+    <br />
     <%= book.category %>
-  </p>
-  <p>
-    Summary
+  </section>
+  <section class="book-search-summary">
+    <div class="book-search-summary-title">Summary</div>
+    <br />
     <%= book.summary %>
-  </p>
+  </section>
 <% end %>
+</section>
