@@ -1,7 +1,47 @@
-
+.book_summary {
+  height: 350px;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.book_review {
+  height: 350px;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.book-title {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.book-author {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.book-category {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.book-review-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
 .book-review {
   margin-top: 15px;
 }
 .page-footer {
+  margin-top: 15px;
   text-align: center;
+}
+.bottom-edit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.book-review-name h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight:900;
+}
+
+.book-review-content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }

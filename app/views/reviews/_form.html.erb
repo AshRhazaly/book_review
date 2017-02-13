@@ -1,17 +1,9 @@
-<%= form_for([@book,@book.reviews.build]) do |f| %>
-
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<section class="container review-form">
+<%= bootstrap_form_for ([@book,@book.reviews.build]) do |f| %>
+ <%= f.text_field :name %>
+ <%= f.text_field :content %>
+ <%= f.submit 'Save'%>
+ <br />
+ <%= link_to 'Back', books_path %>
 <% end %>
+</section>
