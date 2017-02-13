@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Book Review</title>
-    <%= csrf_meta_tags %>
+    <head>
+        <title>Book Review</title>
+        <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  </head>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
 
-
-  <body class="container-fluid">
-    <header class="container container-full">
-      <section class="website-header">
-          <strong>Ash's World of Books</strong>
-      </section>
-      <section class="create-book">
-        <%= link_to 'Add a book here', new_book_path, class:"btn btn-default btn-create" %>
-      </section>
-      <section class="search-bar">
-          <%= render 'search_form' %>
-      </section>
-    </header>
-    <%= yield %>
-  </body>
+    <body class="container-fluid">
+        <header class="container container-full">
+            <section class="website-header">
+                <strong>Ash's World of Books</strong>
+            </section>
+            <section class="create-book">
+                <%= link_to 'Add a book here', new_book_path, class:"btn btn-default btn-create" %>
+            </section>
+            <section class="search-bar">
+                <%= render 'search_form' %>
+            </section>
+        </header>
+        <%= yield %>
+    </body>
 </html>
